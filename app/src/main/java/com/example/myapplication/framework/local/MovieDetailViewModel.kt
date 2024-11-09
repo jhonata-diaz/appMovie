@@ -1,12 +1,9 @@
-package com.example.myapplication.database
+package com.example.myapplication.framework.local
 
-import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.calyr.framework.network.RemoteDataSource
-import com.calyr.framework.network.RetrofitBuilder
 import com.example.myapplication.data.MovieRepository
 import com.example.myapplication.domain.Movie
 import dagger.hilt.android.lifecycle.HiltViewModel

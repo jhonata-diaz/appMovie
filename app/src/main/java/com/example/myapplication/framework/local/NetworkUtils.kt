@@ -1,4 +1,4 @@
-package com.example.myapplication.hilt
+package com.example.myapplication.framework.local
 
 import android.content.Context
 import android.net.ConnectivityManager

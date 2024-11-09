@@ -1,4 +1,4 @@
-package com.example.myapplication.database
+package com.example.myapplication.framework.local
 
 import android.content.Context
 import com.example.myapplication.data.ILocalDataSource

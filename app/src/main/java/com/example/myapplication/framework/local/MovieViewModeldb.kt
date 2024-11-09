@@ -1,7 +1,5 @@
-package com.example.myapplication.database
+package com.example.myapplication.framework.local
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.MovieRepository
@@ -12,16 +10,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 
-import android.content.Context
 import android.util.Log
 
-import androidx.lifecycle.viewModelScope
-
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import dagger.hilt.android.lifecycle.HiltViewModel
 
-import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
 
@@ -56,7 +49,7 @@ class MovieViewModeldb @Inject constructor(
                 // Handle error state
                 Log.e("MOVIE", "Error fetching movies", e)
                 withContext(Dispatchers.Main) {
-                    _state.value = MovieState.Error( errorMessage = e.message)
+                    _state.value = MovieState.Error(errorMessage = e.message)
                 }
             }
         }

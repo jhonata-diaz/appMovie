@@ -1,4 +1,4 @@
-package com.example.myapplication.network
+package com.example.myapplication.framework.network
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

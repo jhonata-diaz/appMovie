@@ -1,6 +1,5 @@
 package com.calyr.framework.network
 
-import com.example.myapplication.database.MovieEntity
 import com.example.myapplication.domain.Movie
 
 

@@ -3,7 +3,7 @@ package com.example.myapplication.data
 import android.content.Context
 import android.widget.Toast
 import com.example.myapplication.domain.Movie
-import com.example.myapplication.hilt.NetworkUtils
+import com.example.myapplication.framework.local.NetworkUtils
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

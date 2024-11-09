@@ -1,4 +1,4 @@
-package com.example.myapplication.hilt
+package com.example.myapplication.ModuleHilt
 
 
 
@@ -7,7 +7,8 @@ import android.content.Context
 import com.calyr.framework.network.RemoteDataSource
 import com.calyr.framework.network.RetrofitBuilder
 import com.example.myapplication.data.MovieRepository
-import com.example.myapplication.database.LocalDataSource
+import com.example.myapplication.framework.local.LocalDataSource
+import com.example.myapplication.framework.local.NetworkUtils
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
